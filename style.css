@@ -200,26 +200,56 @@ a{color:inherit;}
 .index-row.is-live .idx-status{color:var(--ink); font-weight:700;}
 .index-row.is-live .idx-num{color:var(--ink); font-weight:700;}
 
-/* ===== ステートメント ===== */
-.statement-section{
-  padding:0 0 var(--sp-16);
+/* ===== ブランドの結び ===== */
+.brand-close{
+  padding-top:var(--sp-16);
+  padding-bottom:var(--sp-16);
   border-bottom:1px solid var(--line);
+  text-align:center;
 }
-.statement-section .container{
-  display:flex;
-  justify-content:flex-end;
+
+.brand-close-mark{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  margin-bottom:22px;
 }
-.statement-section p{
-  margin:0;
-  max-width:520px;
-  font-size:clamp(18px, 2.2vw, 25px);
-  font-weight:500;
-  letter-spacing:0.01em;
-  line-height:1.85;
+.crescent-icon{
+  width:17px;
+  height:17px;
   color:var(--ink);
-  text-align:right;
 }
-.statement-section p .dim{color:var(--ink-faint);}
+.brand-close-mark .eng{
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:0.22em;
+  color:var(--ink);
+}
+
+.brand-close-tagline{
+  margin:0 auto 40px;
+  max-width:none;
+  white-space:nowrap;
+  font-size:clamp(15px, 3.4vw, 25px);
+  font-weight:700;
+  letter-spacing:0.02em;
+  line-height:1.7;
+  color:var(--ink);
+}
+
+.brand-close-body{
+  max-width:460px;
+  margin:0 auto;
+  text-align:left;
+}
+.brand-close-body p{
+  margin:0 0 26px;
+  font-size:13.5px;
+  color:var(--ink-soft);
+  letter-spacing:0.02em;
+  line-height:2.15;
+}
+.brand-close-body p:last-child{margin-bottom:0;}
 
 /* ===== フッター ===== */
 .site-footer{
@@ -316,8 +346,7 @@ a{color:inherit;}
   .index-row .idx-num{padding-top:0;}
   .index-row .idx-status{align-self:start; padding-top:0;}
 
-  .statement-section .container{justify-content:flex-start;}
-  .statement-section p{text-align:left;}
+  .brand-close{padding-top:var(--sp-10); padding-bottom:var(--sp-10);}
 }
 
 a:focus-visible{
