@@ -358,3 +358,36 @@ a:focus-visible{
   html{scroll-behavior:auto;}
   .index-row{transition:none;}
 }
+/* ===== ブランドクラム(スタジオ階層ナビ) ===== */
+.brand-crumb{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:0.06em;
+}
+.studio-link{
+  text-decoration:none;
+  color:var(--ink-soft);
+  transition:color .15s ease;
+}
+.studio-link:hover{color:var(--ink);}
+.crumb-sep{
+  color:var(--ink-faint);
+  font-weight:400;
+}
+
+/* ===== 汎用ブランドアイコン ===== */
+.brand-icon{
+  width:17px;
+  height:17px;
+  color:var(--ink);
+}
+
+/* ===== スタジオトップの、クリック可能な行 ===== */
+.index-row-link{
+  text-decoration:none;
+  color:inherit;
+  display:grid;
+}
